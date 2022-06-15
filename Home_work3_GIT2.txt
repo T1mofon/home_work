@@ -1,0 +1,74 @@
+home work 3  (GIT part2)
+group 30  
+in telegram @T1mofon4ik
+
+
+
+. На локальном репозитории сделать ветки для:
+- Postman
+git branch Postman
+
+- Jmeter
+git branch Jmeter
+
+- CheckLists
+git branch Checklists
+
+- Bag Reports
+git branch Bag_reports
+
+- SQL
+git branch SQL
+
+- Charles
+git branch Charles
+
+- Mobile testing
+git branch Mobile_testing
+
+2. Запушить все ветки на внешний репозиторий
+git push origin Postman Jmeter Checklists Bag_reports SQL Charles Mobile_testing
+
+3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта
+      git checkout Bag_reports
+      touch structure.txt
+      nano structure.txt
+      (написал текст)
+      Ctrl+O
+      Ctrl+X
+
+4. Запушить структуру багрепорта на внешний репозиторий
+      git status
+      git add structure.txt
+      git commit -m "add structure bag report"
+      git push origin Bag_reports
+      
+5. Вмержить ветку Bag Reports в Main
+      git checkout main
+      git merge Bag_reports -m "merge_Bag_report"
+        
+6. Запушить main на внешний репозиторий.
+      git push
+   
+7. В ветке CheckLists набросать структуру чек листа.
+      git checkout Checklists
+      cat > ChL_structure.txt
+      blablabla
+      Ctrl+D
+
+8. Запушить структуру на внешний репозиторий
+      git add ChL_structure.txt
+      git commit -m "add structure check list"
+      git push origin Checklists
+
+9. На внешнем репозитории сделать Pull Request ветки CheckLists в main
+      На сайте github.com в верхнем меню нажал на кнопку pull request
+      На открівшейся странице нажал на зеленую кнопку New pull request
+      Из випадающего списка выбрал нашу ветку Cheklists и нажал зеленую кнопку Create pull request
+      Добавил коментарий и снова нажал зеленую кнопку Create pull request
+
+10. Синхронизировать Внешнюю и Локальную ветки Main
+      git checkout main
+      git pull
+      
+
